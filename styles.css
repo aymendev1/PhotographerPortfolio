@@ -1,0 +1,221 @@
+/*Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap");
+/*root*/
+:root {
+  --AymenFont: "Sora", sans-serif;
+  --regular: 400;
+  --bold: 600;
+}
+body section {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+/**********Header************/
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgb(0 0 0 / 45%), rgb(24 24 24 / 45%)),
+    url(/src/Background.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+header .row {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.myNav {
+  text-align: center;
+  font-size: 25px;
+  font-family: var(--AymenFont);
+  font-weight: var(--regular);
+  padding: 2rem;
+}
+.myNav a {
+  color: white;
+  text-decoration: unset;
+}
+.myNav a:hover {
+  color: black;
+}
+header .row .col-md-6 h3,
+.section-01 .col-md-6 h3 {
+  padding-bottom: 3vmin;
+  font-size: 50px;
+  font-family: var(--AymenFont);
+  font-weight: var(--regular);
+}
+header .row .col-md-6 p {
+  font-family: var(--AymenFont);
+  font-weight: var(--regular);
+  text-align: justify;
+}
+.mybutton {
+  font-family: inherit;
+  font-size: 20px;
+  background: white;
+  color: black;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  margin-top: 5vmin;
+}
+
+.mybutton span {
+  display: block;
+  margin-left: 0.5em;
+  transition: all 0.3s ease-in-out;
+}
+
+.mybutton i {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mybutton:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.mybutton:hover i {
+  transform: translateX(3em) rotate(0deg) scale(1.1);
+}
+
+.mybutton:hover span {
+  transform: translateX(6.5em);
+}
+
+.mybutton:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+/***********Section 01************/
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: #1b1e23;
+  color: white;
+  padding-top: 5vmin;
+  font-family: var(--AymenFont);
+  font-weight: var(--regular);
+  position: relative;
+}
+.section-01 .row {
+  margin: 0;
+  margin-right: 70px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.section-01 .col-md-6 {
+  padding: 5vmin;
+}
+.section-01 .col-md-6 h4 {
+  padding-bottom: 3vmin;
+  font-size: 30px;
+}
+.section-01 .col-md-5 p {
+  text-align: justify;
+}
+.section-01 .col-md-6 .mybutton {
+  margin-top: 4rem;
+}
+.section-01 .col-md-5 .mybutton:hover i {
+  transform: translateX(5em) rotate(0deg) scale(1.1);
+}
+.section-01 .col-md-5 .mybutton:hover span {
+  transform: translateX(11em);
+}
+/**** Section-02 ********/
+.section-02 .col-md-3 img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+.section-02 .col-md-3 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+/***** Section 03********/
+.section-03 .row {
+  margin: 0;
+  margin-right: 70px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.section-03 .col-md-4 h3 {
+  padding-bottom: 3vmin;
+  font-size: 50px;
+  font-family: var(--AymenFont);
+  font-weight: var(--regular);
+}
+.section-03 .col-md-7 h4 {
+  padding-bottom: 3vmin;
+  font-size: 30px;
+}
+.section-03 .col-md-7 .p-2 {
+  width: 600px;
+}
+/*** Footer **/
+footer {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgb(0 0 0 / 45%), rgb(24 24 24 / 45%)),
+    url(/src/footer-background.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 5vmin;
+  font-family: var(--AymenFont);
+  font-weight: var(--regular);
+  position: relative;
+}
+footer h3 {
+  text-align: center;
+}
+footer .row {
+  margin: 0;
+  margin-right: 70px;
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+footer .col-md-8 {
+  background-color: #ffff;
+  color: black;
+  padding: 3vmin;
+}
+footer .col-md-4 {
+  background-color: #1b1e23;
+  color: white;
+  padding: 3vmin;
+}
+footer i {
+  font-size: 30px;
+  padding-top: 3vmin;
+  padding-right: 3vmin;
+}
